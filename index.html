@@ -16,63 +16,70 @@
     <title>Document</title>
   </head>
   <body>
-    <main class="main">
-      <footer class="main-footer">
-        <a href="#" class="main-footer__logo">Leslie Daniels</a>
-        <nav class="main-footer__nav">
-          <ul class="footer__nav-list">
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link"
-                ><img src="img/icon/Twiiter.svg" alt=""
+    <header class="header">
+      <div class="header-container">
+        <nav class="main-nav">
+          <a href="#!" class="main-nav__logo">Leslie Daniels</a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#!" class="main-nav__link"
+                ><img src="img/icon/Twiiter.svg" alt="twitter"
               /></a>
             </li>
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link"
-                ><img src="img/icon/Instagram.svg" alt=""
+            <li class="main-nav__item">
+              <a href="#!" class="main-nav__link"
+                ><img src="img/icon/Instagram.svg" alt="instagram"
               /></a>
             </li>
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link"
-                ><img src="img/icon/Flickr.svg" alt=""
+            <li class="main-nav__item">
+              <a href="#!" class="main-nav__link"
+                ><img src="img/icon/Flickr.svg" alt="flickr"
               /></a>
             </li>
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">
-                <img src="img/icon/500px.svg" alt="" />
+            <li class="main-nav__item">
+              <a href="#!" class="main-nav__link">
+                <img src="img/icon/500px.svg" alt="500px" />
               </a>
             </li>
           </ul>
         </nav>
-      </footer>
-      <section class="main-title">
-        <h1 class="main-title__heading">Welcome to Wonderland</h1>
-        <p>I’m leslie, a freelance photographer</p>
-      </section>
-      <section class="description">
-        <div class="description__icon">
-          <img src="img/icon/Camera.svg" alt="" />
+        <div class="title">
+          <h1>
+            Welcome to Wonderland
+          </h1>
+          <h2>
+            I’m leslie, a freelance photographer
+          </h2>
         </div>
-        <div class="description__title">
-          everyday’s a journey
-        </div>
-        <div class="description__about">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </p>
-        </div>
-      </section>
-      <section class="slogan">
-        <div class="slogan__icon">
-          <img src="img/icon/kov.svg" alt="" />
-        </div>
-        <div class="slogan__title">
-          You never get a second chance to make a good first impression
-        </div>
-      </section>
-      <section class="portfolio">
+      </div>
+    </header>
+
+    <section class="description">
+      <div class="description__icon">
+        <img src="img/icon/Camera.svg" alt="camera_icon" />
+      </div>
+      <h2>everyday’s a journey</h2>
+      <div class="description__about">
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </p>
+      </div>
+    </section>
+
+    <section class="slogan">
+      <div class="slogan__icon">
+        <img src="img/icon/kov.svg" alt="kov_icon" />
+      </div>
+      <h2>
+        You never get a second chance to make a good first impression
+      </h2>
+    </section>
+
+    <section class="portfolio">
+      <div class="portfolio-container">
         <div class="portfolio__icon">
           <img src="img/icon/Two_Polaroid_Pictures_64.svg" alt="" />
         </div>
@@ -126,11 +133,20 @@
             </li>
           </ul>
         </div>
-        <div class="portfolio__slider">
-          <div class="portfolio__slider-left"></div>
-          <div class="portfolio__slider-right"></div>
+        <div class="slider">
+          <div class="portfolio-slider__left">
+            <img src="img/icon/Arrow left.svg" alt="arrow_left" />
+            <span>previous page</span>
+          </div>
+          <div class="portfolio-slider__right">
+            <span>next page</span>
+            <img src="img/icon/Arrow right.svg" alt="arrow_right" />
+          </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+    <!-- <section class="portfolio__slider">
+          
+      </section> -->
   </body>
 </html>

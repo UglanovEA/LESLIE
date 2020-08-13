@@ -209,22 +209,127 @@ body {
   margin-right: 40px;
 }
 
+.maps {
+  height: 300px;
+  background-image: url(./img/bg/map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.maps__marker {
+  position: absolute;
+  left: 39%;
+  top: 60%;
+  transform: translate(-100%, -100%);
+}
+
 .contacts {
-  height: 642px;
+  height: auto;
   background-image: url(./img/bg/footer.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding: 40px 0;
+  position: relative;
+}
+.contacts::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 .contacts__title {
   font-size: 24px;
   font-family: "Lato", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
   line-height: 1.2;
+  letter-spacing: 4px;
+  margin-bottom: 60px;
+  z-index: 9;
+}
+.submit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.submit__input {
+  width: 480px;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: #3c3930;
+  opacity: 0.7;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  padding: 20px 15px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  z-index: 7;
+}
+.submit__input:nth-child(2) {
+  margin-right: 0;
+}
+.submit__input:focus {
+  outline: none;
+}
+.submit__area {
+  width: 100%;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: #3c3930;
+  opacity: 0.7;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  padding: 20px 15px;
+  margin-bottom: 40px;
+  z-index: 7;
+}
+.submit__area:focus {
+  outline: none;
+}
+.submit__button {
+  width: 400px;
+  display: block;
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  background: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  border: 2px solid #ffffff;
+  padding: 10px 0;
+  z-index: 7;
   margin-bottom: 60px;
 }
+.contacts__copyright {
+  width: 680px;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  border-top: 1px solid #ffffff;
+  text-align: center;
+  padding-top: 10px;
+}
+
 /*soft*/
-.none {
-  display: none;
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

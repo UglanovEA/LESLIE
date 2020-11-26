@@ -12,50 +12,64 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="../libs/owlcarousel2/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href=".//libs/owlcarousel2/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Leslie</title>
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <nav class="header-nav">
-          <a href="#!" class="header-nav__logo">Leslie Daniels</a>
-          <ul class="header-nav-list">
-            <li class="header-nav__item">
-              <a href="#!" class="header-nav__link"
-                ><img src="img/icons/Twiiter.svg" alt="twitter"
-              /></a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#!" class="header-nav__link"
-                ><img src="img/icons/Instagram.svg" alt="instagram"
-              /></a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#!" class="header-nav__link"
-                ><img src="img/icons/Flickr.svg" alt="flickr"
-              /></a>
-            </li>
-            <li class="header-nav__item">
-              <a href="#!" class="header-nav__link">
-                <img src="img/icons/500px.svg" alt="500px" />
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-desk">
-          <h1 class="header-title">
-            Welcome to Wonderland
-          </h1>
-          <h2 class="header-subtitle">
-            I’m leslie, a freelance photographer
-          </h2>
+      <div class="header-content">
+        <div class="container">
+          <div class="header-links">
+            <a href="#!" class="header-links__logo">Leslie Daniels</a>
+            <ul class="header-links-list">
+              <li class="header-links__item">
+                <a href="#!" class="header-links__link"
+                  ><img src="img/icons/Twiiter.svg" alt="twitter"
+                /></a>
+              </li>
+              <li class="header-links__item">
+                <a href="#!" class="header-links__link"
+                  ><img src="img/icons/Instagram.svg" alt="instagram"
+                /></a>
+              </li>
+              <li class="header-links__item">
+                <a href="#!" class="header-links__link"
+                  ><img src="img/icons/Flickr.svg" alt="flickr"
+                /></a>
+              </li>
+              <li class="header-links__item">
+                <a href="#!" class="header-links__link">
+                  <img src="img/icons/500px.svg" alt="500px" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-desk">
+            <h1 class="header-title">Welcome to Wonderland</h1>
+            <h2 class="header-subtitle">
+              I’m leslie, a freelance photographer
+            </h2>
+          </div>
         </div>
+      </div>
+      <div class="owl-carousel owl-theme">
+        <div class="item"></div>
+        <div class="item2"></div>
+        <div class="item"></div>
+        <div class="item2"></div>
       </div>
     </header>
 
     <main>
-      <section class="about">
+      <!-- <section class="about">
         <div class="container">
           <div class="about__icon">
             <img src="img/icons/Camera.svg" alt="about_icon" />
@@ -73,9 +87,9 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="slogan">
+      <!-- <section class="slogan">
         <div class="slogan__icon">
           <img src="img/icons/kov.svg" alt="slogan_icon" />
         </div>
@@ -83,9 +97,9 @@
           You never get a second chance <br />
           to make a good first impression
         </h2>
-      </section>
+      </section> -->
 
-      <section class="portfolio">
+      <!-- <section class="portfolio">
         <div class="container">
           <div class="portfolio__icon">
             <img src="img/icons/Polaroid.svg" alt="portfolio__icon" />
@@ -119,9 +133,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="find">
+      <!-- <section class="find">
         <div class="container">
           <div class="find__icon">
             <img src="img/icons/map.svg" alt="map_icon" />
@@ -147,14 +161,14 @@
             </ul>
           </nav>
         </div>
-      </section>
-      <section class="maps">
+      </section> -->
+      <!-- <section class="maps">
         <div class="maps__marker">
           <img src="img/icons/marker.svg" alt="marker_icon" />
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="contacts">
+    <!-- <footer class="contacts">
       <div class="container center">
         <h2 class="contacts__title">
           interested in my work? let’s get in touch!
@@ -174,6 +188,9 @@
           &copy; 2015 Leslie Daniels -All rights reserved
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <script src="libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="libs/owlcarousel2/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

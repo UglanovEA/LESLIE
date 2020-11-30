@@ -17,6 +17,7 @@ body {
   height: 100vh;
   width: 100%;
   position: relative;
+  margin-bottom: 50px;
 }
 .item,
 .item2 {
@@ -135,21 +136,27 @@ body {
     font-size: 30px;
   }
 }
-
 .about {
-  height: 345px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
-  font-family: 'Lato', sans-serif;
   color: #3c3930;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 50px;
+  padding: 0px 15px;
+}
+@media (min-width: 1024px) {
+  .about {
+    padding: 0px;
+  }
 }
 .about__icon {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 .about-desk {
+  max-width: 685px;
   display: flex;
   flex-direction: column;
 }
@@ -166,116 +173,128 @@ body {
   line-height: 1.3;
   letter-spacing: 0.9px;
 }
-
 .slogan {
   height: 300px;
-  background-image: url(./img/bg/Parallaximage.jpg);
+  position: relative;
+  background-image: url(../img/bg/parallaximage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
+}
+.slogan__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .slogan__title {
-  font-size: 30px;
-  font-family: 'SantElia Script Bold DMO';
   color: #ffffff;
+  font-family: 'SantElia Script Bold DMO';
+  font-size: 30px;
   font-weight: 900;
   line-height: 1.2;
   letter-spacing: 2.25px;
   text-align: center;
 }
-
 .portfolio {
-  margin: 50px 0;
+  margin-bottom: 50px;
 }
 .portfolio__icon {
   text-align: center;
   margin-bottom: 30px;
 }
 .portfolio__title {
-  font-size: 24px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
   color: #3c3930;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 1.2;
   letter-spacing: 4.8px;
   text-align: center;
   margin-bottom: 50px;
 }
-.portfolio-pictures__row {
-  display: flex;
-  width: 240px;
+#carouseTwo {
   height: 200px;
-  margin-bottom: 20px;
-}
-.portfolio-pictures__row img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  margin-right: 13.33333333px;
-}
-.portfolio-pictures__row img:last-child {
-  margin-right: 0;
-}
-.portfolio-pictures__large {
-  margin-bottom: 20px;
-}
-.portfolio-pictures__large img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 .portfolio-controls {
   height: 32px;
   display: flex;
-  justify-content: space-between;
+  margin-top: 25px;
+  padding: 0 15px;
 }
-.portfolio-controls__arrow {
+@media (min-width: 1024px) {
+  .portfolio-controls {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+  .portfolio-controls {
+    padding: 0px;
+  }
+}
+.portfolio-controls__arrow-prev,
+.portfolio-controls__arrow-next {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-.portfolio-controls__arrow span {
-  font-size: 18px;
-  font-family: 'Lato', sans-serif;
+.portfolio-controls__arrow-next {
+  flex-shrink: 1;
+  text-align: right;
+}
+.portfolio-controls span {
   color: #3c3930;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
   text-transform: uppercase;
   line-height: 1.2;
-  padding: 0 25px;
+  padding: 0 10px;
+}
+@media (min-width: 1024px) {
+  .portfolio-controls span {
+    padding: 0 25px;
+  }
 }
 
 .find {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 50px;
 }
 .find__icon {
   margin-bottom: 30px;
 }
 .find__title {
-  font-size: 24px;
-  font-family: 'Lato', sans-serif;
   color: #3c3930;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
   text-transform: uppercase;
   line-height: 1.2;
   margin-bottom: 30px;
 }
-.find-nav {
+.find-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 80px;
+  flex-direction: column;
 }
-.find-nav-list {
-  display: flex;
+@media (min-width: 768px) {
+  .find-list {
+    flex-direction: row;
+  }
 }
-.find-nav__item {
-  margin-right: 40px;
+.find__item {
+  margin-right: 0px;
+}
+@media (min-width: 768px) {
+  .find__item {
+    margin-right: 40px;
+  }
 }
 
 .maps {

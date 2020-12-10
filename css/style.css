@@ -22,7 +22,7 @@ body {
 .item,
 .item2 {
   height: 100vh;
-  background-image: url(../img/bg/heroimage.jpg);
+  background-image: url(.././img/bg/heroimage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;

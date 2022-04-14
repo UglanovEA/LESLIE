@@ -1,10 +1,12 @@
 @font-face {
   font-family: 'SantElia Script Bold DMO';
   src: url('../fonts/SantEliaScriptBoldDEMO.otf') format('OpenType');
+  font-display: swap;
 }
 @font-face {
   font-family: 'SantElia Rough Alt Bold ThrDMO';
   src: url('../fonts/SantEliaRoughAltBoldThrDEMO.otf') format('OpenType');
+  font-display: swap;
 }
 * {
   box-sizing: border-box;
